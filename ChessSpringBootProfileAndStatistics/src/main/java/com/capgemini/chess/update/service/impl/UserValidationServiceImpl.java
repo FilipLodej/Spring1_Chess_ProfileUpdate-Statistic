@@ -4,12 +4,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.capgemini.chess.dao.UserDAO;
 import com.capgemini.chess.to.UserTO;
 import com.capgemini.chess.update.exception.UserValidationException;
 import com.capgemini.chess.update.service.UserValidationService;
 
+@Service
 public class UserValidationServiceImpl implements UserValidationService {
 
 	@Autowired

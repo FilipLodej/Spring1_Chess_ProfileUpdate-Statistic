@@ -5,10 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
 import com.capgemini.chess.dataaccess.entities.ProfileEntity;
 import com.capgemini.chess.dataaccess.entities.UserEntity;
 import com.capgemini.chess.dataaccess.soruce.MapDataSource;
-
+@Service
 public class MapDataSoruceImpl implements MapDataSource {
 
 	private Map<Long, UserEntity> usersById = new HashMap<Long, UserEntity>();

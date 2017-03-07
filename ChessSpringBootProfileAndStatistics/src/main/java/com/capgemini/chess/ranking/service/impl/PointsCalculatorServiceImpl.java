@@ -1,9 +1,11 @@
 package com.capgemini.chess.ranking.service.impl;
 
+import org.springframework.stereotype.Service;
+
 import com.capgemini.chess.ranking.exception.ResultException;
 import com.capgemini.chess.ranking.service.PointsCalculatorService;
 import com.capgemini.chess.to.ResultTO;
-
+@Service
 public class PointsCalculatorServiceImpl implements PointsCalculatorService {
 
 	@Override

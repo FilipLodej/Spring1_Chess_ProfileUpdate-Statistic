@@ -1,13 +1,14 @@
 package com.capgemini.chess.dao.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.capgemini.chess.dao.UserDAO;
 import com.capgemini.chess.dataaccess.entities.UserEntity;
 import com.capgemini.chess.dataaccess.soruce.MapDataSource;
 import com.capgemini.chess.to.UserTO;
 import com.capgemini.chess.update.service.mapper.UserMapper;
-
+@Service
 public class UserDAOImpl implements UserDAO {
 
 	@Autowired

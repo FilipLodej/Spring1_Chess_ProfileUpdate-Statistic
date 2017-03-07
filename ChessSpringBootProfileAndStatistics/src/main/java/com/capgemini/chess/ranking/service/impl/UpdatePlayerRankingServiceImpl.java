@@ -1,6 +1,7 @@
 package com.capgemini.chess.ranking.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.capgemini.chess.dao.UserDAO;
 import com.capgemini.chess.ranking.exception.ResultException;
@@ -12,7 +13,7 @@ import com.capgemini.chess.ranking.service.UpdatePointsService;
 import com.capgemini.chess.to.ResultTO;
 import com.capgemini.chess.to.UserTO;
 
-
+@Service
 public class UpdatePlayerRankingServiceImpl implements UpdatePlayerRankingService {
 
 	@Autowired
